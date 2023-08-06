@@ -160,9 +160,6 @@
     background-color: #1875F0;
 }
 
-.banner-icon-box:checked {
-
-}
 
 .banner-icon-box img{
     width: 20px;
@@ -270,6 +267,85 @@
     
     border-bottom:  #1875F0 solid;
     
+}
+
+.album-box {
+    width: 1140px;
+    height: 600px;
+    margin: auto;
+}
+
+.box-title {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 40px;
+}
+.box-title div{
+    display: inline-flex;
+}
+
+.box-title-label {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0px;
+
+    color: #666666;
+}
+.box-title-icon-box {
+    width: 52px;
+    justify-content: space-between;
+    text-align:center;
+}
+.box-title-icon-box img {
+    width: 12px;
+    height: 12px;
+    margin: auto;
+}
+
+.album-box-wrap {
+    width: 1083px;
+    overflow: hidden;
+}
+
+.album-box-content {
+    width: 1356px;
+    height: 512px;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+
+}
+
+.album-item-box {
+    width: 152px;
+    height: 214px;
+}
+
+.album-name {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+
+    color: #666666;
+}
+
+.album-artist {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0px;
+
+    color: #B3B3B3;
 }
 
 
