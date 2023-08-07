@@ -588,4 +588,22 @@ body {
     margin: auto;
 }
 
+.music-play-cur-progress {
+    height: 4px;
+    width: 20%;
+    border-radius: 4px;
+    background: #1875F0;
+    z-index: 1;
+}
+
+.music-play-progress-tag {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: #1875F0;
+    position: relative;
+    right: calc(-100% + 8px);
+    top: -6px;
+}
+
 
