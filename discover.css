@@ -163,7 +163,7 @@ body {
     position: relative;
 }
 
-.banner div,ul,li {
+.banner div{
     display: inline-flex;
 }
 
@@ -219,6 +219,39 @@ body {
     height: auto;
     object-fit: cover;
     overflow: hidden;
+}
+
+.banner-content-des {
+    width: 555px;
+    z-index: 0;
+    flex-direction: column;
+    position: absolute;
+    top: 160px;
+
+}
+
+.banner-content-title {
+    width: 100%;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-align: center;
+    justify-content: center;
+}
+
+.banner-content-detail {
+    width: 100%;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-align: center;
+    justify-content: center;
 }
 
 @keyframes move {
@@ -464,8 +497,8 @@ body {
     height: 30px;
     text-align: center;
 
-    position: absolute;
-    margin: 100px auto 20px;
+    position: relative;
+    top: 70px;
 
 
     font-family: Roboto;
@@ -529,6 +562,7 @@ body {
 
     color: #B3B3B3;
 }
+
 .track-item-box img{
     height: 62px;
     width: 62px;
@@ -606,4 +640,160 @@ body {
     top: -6px;
 }
 
+.music-control-box {
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.music-control-box div {
+    display: inline-flex;
+}
+
+.music-control-icons-box-1 {
+    width: 182px;
+    height: 42px;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 42px;
+}
+
+.music-control-song-box {
+    width: 312px;
+    height: 64px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.music-control-icons-box-1-item{
+    width: 42px;
+    height: 42px;
+    background-size: auto;
+}
+
+#control-icon-backwards {
+    background: url(./src/icons/forward_icon.png) center center no-repeat;
+    transform: rotateY(180deg);
+}
+#control-icon-play {
+    background: url(./src/icons/play_icon.png) center center no-repeat;
+    box-sizing: border-box;
+    border: 2px solid #F0F0F0;
+    border-radius: 50%;
+}
+
+#control-icon-forwards {
+    background: url(./src/icons/forward_icon.png) center center no-repeat;
+}
+
+#control-icon-music {
+    background: url(./src/icons/music_icon.png) center center no-repeat;
+}
+
+.music-control-song-box div,img{
+    display: inline-flex;
+}
+
+.song-des {
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.song-name {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0px;
+    
+    color: #666666;
+}
+
+.song-artist {
+
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+
+    color: #999999;
+}
+
+.song-item-box img{
+    height: 64px;
+    width: 68px;
+}
+
+.music-control-volume-box {
+    width: 257px;
+    height: 18px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.music-control-volume-mute-icon {
+    width: 18px;
+    height: 18px;
+    background-size: auto;
+    background: url(./src/icons/volume_mute_icon.png)  center center no-repeat;
+}
+
+.music-control-volume-icon {
+    width: 18px;
+    height: 18px;
+    background-size: 100%;
+    background: url(./src/icons/volume_icon.png) center center no-repeat;
+}
+
+.music-control-volume-bar-container{
+    width: 168px;
+    height: 4px;
+    border-radius: 4px;
+    background: #F0F0F0;
+}
+
+.music-control-cur-volume{
+    width: 60%;
+    height: 4px;
+    border-radius: 4px;
+    background: #1875F0;
+}
+
+.music-control-cur-volume-tag{
+    background: #1875F0;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    position: relative;
+    right: calc(-100% + 8px);
+    top: -6px;
+}
+
+.music-control-icons-box-2 {
+    width: 114px;
+    height: 21px;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 21px;
+}
+
+.music-control-icons-box-2-item {
+    height: 20px;
+    width: 20px;
+    background-size: auto;
+}
+
+#control-icon-favorite {
+    background: url(./src/icons/favorite_icon.png) center center no-repeat;
+}
+
+#control-icon-repeat {
+    background: url(./src/icons/repeat_icon.png) center center no-repeat;
+}
+
+#control-icon-replay {
+    background: url(./src/icons/replay_icon.png) center center no-repeat;
+}
