@@ -15,6 +15,7 @@ body {
 
 .footer {
     height: 150px;
+    margin: 30px auto;
 }
 
 .content {
@@ -435,34 +436,33 @@ body {
     background: #FFFFFF;
 }
 
-.recommend-item-wrap {
+.recommend-items-wrap {
     display: grid;
     grid-template-columns: repeat(auto-fill, 263px);
     column-gap: 30px;
 }
 
-.recommend-item {
-    width: 263px;
-    height: 150px;
-    background-size: cover;
-    background-repeat: no-repeat;
+.recommend-item-wrap {
     border-radius: 4px;
+    position: relative;
+
+    height: 150px;
+    width: 100%;
 }
 
-#recommend-item-1 {
-    background: url(./src/imgs/recommend1.png);
+.recommend-item-des {
+    display: inline;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
 }
 
-#recommend-item-2 {
-    background: url(./src/imgs/recommend2.png);
-}
-
-#recommend-item-3 {
-    background: url(./src/imgs/recommend3.png);
-}
-
-#recommend-item-4 {
-    background: url(./src/imgs/recommend4.png);
+.recommend-item-img {
+    display: inline;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .recommend-tag {
