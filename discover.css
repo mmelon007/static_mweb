@@ -15,7 +15,7 @@ body {
 
 .footer {
     height: 150px;
-    margin: 30px auto;
+    margin: 30px auto 0;
 }
 
 .content {
@@ -83,6 +83,13 @@ body {
     letter-spacing: 0px;
     
     color: #CCCCCC;
+}
+.search-input-content:hover {
+    color: #666666;
+}
+
+.search-input-content:focus {
+    color: #666666;
 }
 
 .navbar {
@@ -796,4 +803,8 @@ body {
 
 #control-icon-replay {
     background: url(./src/icons/replay_icon.png) center center no-repeat;
+}
+
+.can-click:hover{
+    cursor: pointer;
 }
